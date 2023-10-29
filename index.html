@@ -5,9 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercury</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3715358198.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="header__title">Mercury</h1>
+    </header>
+    <section class="profile">
+        <img src="./img/logo.png" alt="logo" class="profile__logo">
+        <div class="profile__text-wrapper">
+            <h2 class="profile__title">Profile</h2>
+            <p class="profile__text">高校一年生です。Scratchをすることが多いですがHTML,CSS,JavaScriptも書けます。Scratchではintroと呼ばれるアニメーションを作っています。</p>
+        </div>
+    </section>
+    <section class="work">
+        <h2 class="work__title">My Works</h2>
+        <div class="work__wrapper">
+            <div class="work__slide swiper">
+                <div class="work__slide-wrapper swiper-wrapper">
+                    <a href="https://scratch.mit.edu/projects/904846440/" class="work__link swiper-slide" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/work_image1.png" alt="" class="work__image">
+                    </a>
+                    <a href="https://scratch.mit.edu/projects/557083714/" class="work__link swiper-slide" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/work_image2.png" alt="" class="work__image">
+                    </a>
+                    <a href="https://scratch.mit.edu/projects/897171535/" class="work__link swiper-slide" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/work_image3.png" alt="" class="work__image">
+                    </a>
+                    <a href="https://scratch.mit.edu/projects/497433638/" class="work__link swiper-slide" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/work_image4.png" alt="" class="work__image">
+                    </a>
+                </div>
+            </div>
+            <div class="work__button-prev swiper-button-prev"></div>
+            <div class="work__button-next swiper-button-next"></div>
+            <div class="work__pagination swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="sns">
+        <h2 class="sns__title">SNS</h2>
+        <div class="sns__wrapper">
+            <a href="https://www.youtube.com/channel/UCPVTRoMPkPiIXgfOLTQqn3A" class="sns__icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/HU0tbgmGodJhuE5" class="sns__icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://scratch.mit.edu/users/pokosuke0825/" class="sns__icon" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-s"></i></a>
+            <a href="https://github.com/MercuryCoding" class="sns__icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">&copy;Mercury</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
